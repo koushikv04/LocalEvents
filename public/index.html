@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Local Events</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+      <script src="javascripts/script.js"></script>
+  </head>
+  <body>
+    <center>
+      <h1>Vizier</h1>
+    </center>
+    <form name = "localEventForm" onsubmit = "addLocalEvent()">
+      Event Name: <input name = "eventName" type="text" required />
+      Event location: <input name = "eventLocation" type="text" required />
+      Event Start Date: <input name = "eventStartDate" type="date" required />
+      Event Start Time: <input name = "eventStartTime" type="time" required />
+      Event End Date: <input name = "eventEndDate" type="date" required />
+      Event Start Time: <input name = "eventEndTime" type="time" required />
+
+      <select name="interests" required multiple>
+        <option value="5e1ef8d0aaf0ef45bdd736b9">
+          Art & Theatre
+        </option>
+        <option value="5e1ef8d0aaf0ef45bdd736ba">
+          Music
+        </option>
+        <option value="5e1ef8d0aaf0ef45bdd736bb">
+          Literature
+        </option>
+        <option value="5e1ef8d0aaf0ef45bdd736bc">
+          Film
+        </option>
+        <option value="5e1ef8d0aaf0ef45bdd736bd">
+          Sports
+        </option>
+        <option value="5e1ef8d0aaf0ef45bdd736be">
+          Food
+        </option>
+        <option value="5e1ef8d0aaf0ef45bdd736bf">
+          Others
+        </option>
+      </select>
+      Regions:
+      <select name="regions" required>
+        <option value="5c9a6d053e4cb62f743af42a">
+          Ireland
+        </option>
+        <option value="5c9a6d053e4cb62f743af42b">
+          Flanders
+        </option>
+      </select>
+      <input type="submit">
+    </form>
+  </body>
+</html>
